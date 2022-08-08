@@ -1,0 +1,80 @@
+/** Media Queries **/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  min-height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .site-name {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 5rem;
+          flex: 0 0 5rem;
+  padding-left: 1rem;
+  background-color: #003f8c;
+}
+
+@media only screen and (min-width: 1024px) {
+  .header .site-name {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20rem;
+            flex: 0 0 20rem;
+  }
+}
+
+.header .site-name h1 {
+  color: #FFFFFF;
+}
+
+.header .site-name .desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .header .site-name .desktop {
+    display: block;
+  }
+}
+
+.header .site-name .mobile {
+  display: block;
+}
+
+@media only screen and (min-width: 1024px) {
+  .header .site-name .mobile {
+    display: none;
+  }
+}
+/*# sourceMappingURL=app.css.map */
