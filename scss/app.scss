@@ -18,6 +18,11 @@ img {
     max-width: 100%;
 }
 
+i {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
 .app {
     display: flex;
     flex-direction: column;
@@ -52,6 +57,55 @@ img {
 
             @include desktop {
                 display: none;
+            }
+        }
+    }
+}
+
+.bar {
+    flex: 1;
+    background-color: $primary;
+    display: flex;
+    justify-content: space-between;
+
+    .left-content {
+        color: $white;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        .fa-arrow-right {
+            display: none;
+        }
+    }
+
+    .right-content {
+        display: flex;
+        
+        .box {
+            padding: 0 1rem;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                background-color: $secondary;
+            }
+
+            a {
+                color: $white;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+
+                span {
+                    background-color: $tertiary;
+                    padding: 0.5rem;
+                    margin-left: 0.5rem;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    border-radius: 50%;
+                }
             }
         }
     }
