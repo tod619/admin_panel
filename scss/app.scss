@@ -12,7 +12,7 @@ html {
 }
 body {
     font-family: $mainFont;
-    min-height: 100%;
+    height: 100%;
 }
 img {
     max-width: 100%;
@@ -113,6 +113,7 @@ i {
 
 .main-content {
     display: flex;
+    flex: 1;
 }
 
 .sidebar {
@@ -152,3 +153,56 @@ i {
     }
 }
 
+.menu-admin {
+    margin-top: 1rem;
+
+    h2 {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .menu {
+
+        list-style-type: none;
+        padding: 0;
+
+        > li {
+
+            padding: 0.5rem;
+
+            &:hover {
+                ul {
+                    display: block;
+                }
+            }
+
+            a {
+                color: $white;
+                text-decoration: none;
+                padding: 0.5rem;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background-color: $primary;
+                    padding-left: 2rem;
+                }
+            }
+
+            ul {
+                display: none;
+                list-style-type: none;
+                padding: 1rem;
+                background-color: darken($darkGray, 20%);
+                margin-top: 1rem;
+
+                li {
+                    margin-bottom: 1rem;
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
