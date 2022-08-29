@@ -21,6 +21,13 @@ img {
 i {
     margin: 0 1rem;
     font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.no-menu.app {
+    .sidebar {
+        margin-left: -20rem;
+    }
 }
 
 .app {
@@ -121,6 +128,7 @@ i {
     background-color: $darkGray;
     color: $white;
     padding: 1rem 2rem 0 2rem;
+    transition: margin-left 0.5s ease-out;
 
     .user {
         display: flex;
