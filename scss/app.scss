@@ -233,11 +233,13 @@ i {
 
         &.expand {
             flex: 0 0 100%;
+            justify-content: flex-start;
         }
 
         label {
             flex: 0 0 120px;
             padding-left: 1rem;
+            font-weight: bold;
         }
 
         input[type="text"],
@@ -251,8 +253,36 @@ i {
             height: 10rem;
         }
 
+        .options {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+            justify-content: space-between;
+            align-items: center;
+
+            @include tablet {
+                flex: 0 0 40%;
+            }
+
+            label {
+                flex: 1;
+                padding-left: 0.5rem;
+            }
+        }
+
         @include tablet {
             flex: 0 0 50%;
+        }
+
+        &.submit {
+            display: flex;
+            justify-content: flex-end;
+
+            .button {
+                @include button($primary);
+                border: none;
+                border-radius: 5px;
+            }
         }
     }
 }

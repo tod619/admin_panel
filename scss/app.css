@@ -298,6 +298,9 @@ i {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .new-client .field label {
@@ -305,6 +308,7 @@ i {
       -ms-flex: 0 0 120px;
           flex: 0 0 120px;
   padding-left: 1rem;
+  font-weight: bold;
 }
 
 .new-client .field input[type="text"],
@@ -320,11 +324,70 @@ i {
   height: 10rem;
 }
 
+.new-client .field .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .new-client .field .options {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+  }
+}
+
+.new-client .field .options label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 0.5rem;
+}
+
 @media only screen and (min-width: 768px) {
   .new-client .field {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
   }
+}
+
+.new-client .field.submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.new-client .field.submit .button {
+  background-color: #005b9f;
+  padding: .5rem 1rem;
+  display: block;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+  border: none;
+  border-radius: 5px;
+}
+
+.new-client .field.submit .button:hover {
+  cursor: pointer;
+  background-color: #003e6c;
 }
 /*# sourceMappingURL=app.css.map */
