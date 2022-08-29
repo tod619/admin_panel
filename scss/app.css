@@ -294,6 +294,12 @@ i {
   padding: 0.5rem;
 }
 
+.new-client .field.expand {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
 .new-client .field label {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 120px;
@@ -308,6 +314,10 @@ i {
           flex: 1;
   border: none;
   padding: 0.5rem 1rem;
+}
+
+.new-client .field textarea {
+  height: 10rem;
 }
 
 @media only screen and (min-width: 768px) {

@@ -231,6 +231,10 @@ i {
         justify-content: space-between;
         padding: 0.5rem;
 
+        &.expand {
+            flex: 0 0 100%;
+        }
+
         label {
             flex: 0 0 120px;
             padding-left: 1rem;
@@ -241,6 +245,10 @@ i {
             flex: 1;
             border: none;
             padding: 0.5rem 1rem;
+        }
+
+        textarea {
+            height: 10rem;
         }
 
         @include tablet {
