@@ -206,3 +206,45 @@ i {
         }
     }
 }
+
+.content {
+    flex: 1;
+    padding: 1rem;
+    background-color: $gray;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.new-client {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .field {
+        flex: 0 0 100%;
+        display: flex;
+        margin-bottom: 1rem;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0.5rem;
+
+        label {
+            flex: 0 0 120px;
+            padding-left: 1rem;
+        }
+
+        input[type="text"],
+        textarea {
+            flex: 1;
+            border: none;
+            padding: 0.5rem 1rem;
+        }
+
+        @include tablet {
+            flex: 0 0 50%;
+        }
+    }
+}
